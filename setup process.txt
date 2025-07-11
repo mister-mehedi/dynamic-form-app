@@ -1,0 +1,56 @@
+npx create-vite@latest
+npm i react-router
+
+npm install -D tailwindcss postcss autoprefixer
+
+----------------------------------------------------
+tailwind config.js:
+/** @type {import('tailwindcss').Config} */
+export default {
+  // 1. Add the paths to all of your template files
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  // 2. Add daisyUI as a plugin
+  plugins: [require("daisyui")],
+}
+
+-----------------------------------------------------
+postcss config.js:---
+export default {
+  plugins: {
+    '@tailwindcss/postcss': {},
+    autoprefixer: {},
+  },
+}
+
+------------------------------------------------------
+npm install -D @tailwindcss/postcss
+
+
+npm install tailwindcss @tailwindcss/vite
+
+------------------------------------------------------
+[[[[[
+import tailwindcss from '@tailwindcss/vite'
+
+tailwindcss(),
+]]]]]
+
+------------------------------------------------------
+@import "tailwindcss";
+
+
+npm i -D daisyui@latest
+
+@plugin "daisyui";
+
+node: true,
+-------------------------------------------------------
+data-theme="light"
+-------------------------------------------------------
+npm install react-router-dom
