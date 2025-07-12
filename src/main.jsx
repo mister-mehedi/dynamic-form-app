@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import './index.css'; // This imports your Tailwind CSS styles
 
-// We will create these component files in the next steps
+// Importing the main layout and error page components
 import Root from './routes/Root.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Home from './pages/Home.jsx';
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         index: true, // This makes the Home component the default page for the "/" path
         element: <Home />,
       },
-      // You could add other pages here later like:
-      // { path: "dashboard", element: <Dashboard /> }
+      // Add other pages here later like:
+      // { path: "pathName", element: <ComponnetName /> }
     ],
   },
 ]);

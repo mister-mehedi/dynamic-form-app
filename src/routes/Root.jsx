@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-// We will create these component files in the next steps
+// Importing the Navbar and Footer components to be used in the layout.
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -13,7 +13,6 @@ export default function Root() {
       <Navbar />
 
       {/* The Outlet component from react-router-dom renders the active child route's element. */}
-      {/* In our case, this will be the Home component. */}
       <main className="flex-grow container mx-auto px-4 py-8">
         <Outlet />
       </main>
